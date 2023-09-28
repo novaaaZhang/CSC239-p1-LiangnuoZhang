@@ -58,6 +58,7 @@ while True:
             else:
                 client_socket.send("Invalid request".encode())
 
+    # sometimes not connecting
     except ConnectionError as e:
         print(f"Connection Error: {e}")
     except ValueError:
